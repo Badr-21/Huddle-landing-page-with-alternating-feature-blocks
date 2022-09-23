@@ -1,0 +1,463 @@
+:root {
+    /*## Colors
+    ### Primary*/
+    --Pink: hsl(322, 100%, 66%);
+    /*### Neutral*/
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container { 
+    width: 100vw;
+    position: relative;
+    padding-bottom: 12%;
+}
+
+.sec-one {
+    width: 100vw;
+    padding: 3% 4%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: var(--Very-Pale-Cyan);
+} 
+
+.sec-one header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.sec-one header button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.2vw;
+    width: 15%;
+    padding: 1%;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px rgba(211, 211, 211, 0.5), -1px -1px 8px rgba(211, 211, 211, 0.5);
+}
+
+.sec-one header button:hover {
+    color: var(--Grayish-Blue);
+    cursor: pointer;
+}
+
+.sec-one article {
+    width: 45%;
+    margin-top: 7.5%;
+}
+
+.sec-one article h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.sec-one article p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    width: 92%;
+    margin-bottom: 5%;
+}
+
+.sec-one article button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.2vw;
+    padding: 2% 0;
+    width: 50%;
+    background-color: var(--Pink);
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.sec-one article button:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.sec-one .image-one {
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sec-one .image-one img {
+    max-width: 95%;
+}
+
+.sec-two {
+    width: 100vw;
+    padding: 4%;
+}
+
+.sec-two > article {
+    width: 100%;
+    padding: 4% 0;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(211, 211, 211, 0.5), -1px -1px 8px rgba(211, 211, 211, 0.5);
+}
+
+.sec-two > article .image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.sec-two > article div img {
+    width: 90%;
+}
+
+.sec-two > article .text {
+    width: 42%;
+}
+
+.sec-two > article div h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.6vw;
+    margin-bottom: 3%;
+}
+
+.sec-two > article div p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    width: 93.5%;
+}
+
+.sec-flowing {
+    position: absolute;
+    width: 50%;
+    padding: 3% 0 2.5% 0;
+    background-color: white;
+    text-align: center;
+    left: 50%;
+    bottom: -2.5%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(211, 211, 211, 0.5), -1px -1px 4px rgba(211, 211, 211, 0.5);
+}
+
+.sec-flowing h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.6vw;
+    margin-bottom: 5%;
+}
+
+.sec-flowing button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.6vw;
+    width: 50%;
+    padding: 2% 0;
+    color: white;
+    background-color: var(--Pink);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 1px 1px 8px rgba(211, 211, 211, 0.5), -1px -1px 8px rgba(211, 211, 211, 0.5);
+}
+
+.sec-flowing button:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+footer {
+    width: 100vw;
+    padding: 10% 5% 3%;
+    background-color: var(--Very-Dark-Cyan);
+    color: white;
+    font-size: 1.5vw;
+}
+
+.logo-bottom {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.logo-bottom img {
+    width: 25%;
+    filter: brightness(0) invert(1);
+}
+
+.footer-text {
+    width: 100%;
+    display: flex;
+}
+
+.footer-text div:not(.personal-accounts) {
+    margin-right: 10%;
+}
+
+.footer-text .personal-details {
+    width: 35%;
+}
+
+.footer-text .personal-details div:hover {
+    cursor: pointer;
+}
+
+.footer-text .personal-details div {
+    display: flex;
+    margin-bottom: 8%;
+}
+
+.footer-text .personal-details div p {
+    margin-left: 5%;
+}
+
+.footer-text .personal-details .lorem img {
+    align-self: flex-start;
+}
+
+.footer-text .about-us,
+.footer-text .contact-us {
+    width: 15%;
+}
+
+.footer-text .about-us p,
+.footer-text .contact-us p {
+    margin-bottom: 25%;
+}
+
+.footer-text .about-us p:hover,
+.footer-text .contact-us p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.footer-text .personal-accounts {
+    display: flex;
+    width: 20%;
+}
+
+.footer-text .personal-accounts div {
+    width: 30px;
+    height: 30px;
+    max-width: 3vw;
+    max-height: 3vw;
+    margin-right: 3%;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: relative;
+}
+
+.footer-text .personal-accounts div i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.footer-text .personal-accounts div:hover {
+    border-color: var(--Pink);
+    color: var(--Pink);
+    cursor: pointer;
+}
+
+footer .copyright {
+    padding: 0 2%;
+    font-size: 1.3vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 375px) {
+    .sec-one {
+        width: 100vw;
+        padding: 3% 4%;
+        margin-bottom: 8%;
+        flex-direction: column;
+        background-image: url(images/bg-hero-mobile.svg);
+    } 
+
+    .sec-one header img {
+        width: 30%;
+    }
+
+    .sec-one header button {
+        width: 30%;
+        font-size: 2.5vw;
+    }
+
+    .sec-one article {
+        width: 100%;
+        margin-top: 7.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sec-one article h1 {
+        font-size: 6vw;
+        width: 80%;
+    }
+
+    .sec-one article p {
+        font-size: 4vw;
+        width: 83%;
+    }
+
+    .sec-one article button {
+        font-size: 3vw;
+        width: 60%;
+        margin-bottom: 12%;
+    }
+
+    .sec-one .image-one {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .sec-one .image-one img {
+        max-width: 90%;
+    }
+
+    .sec-two {
+        margin-bottom: 30%;
+    }
+
+    .sec-two > article {
+        padding: 12% 0 6%;
+        margin-bottom: 8%;
+        flex-direction: column;
+    }
+
+    .sec-two > article .image {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+
+    .sec-two > article div img {
+        width: 80%;
+    }
+
+    .sec-two > article .text {
+        width: 100%;
+        padding: 0 5%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec-two > article div h2 {
+        font-size: 5.5vw;
+        margin-bottom: 3%;
+    }
+
+    .sec-two > article div p {
+        font-size: 3.7vw;
+        width: 80%;
+    }
+
+    .sec-flowing {
+        width: 90%;
+        padding: 8% 0;
+        bottom: -1.5%;
+    }
+
+    .sec-flowing h2 {
+        font-size: 5vw;
+    }
+
+    .sec-flowing button {
+        font-size: 3vw;
+        width: 60%;
+        padding: 3% 0;
+    }
+
+    footer {
+        padding: 20% 3% 8%;
+        font-size: 4vw;
+    }
+
+    .logo-bottom img {
+        width: 50%;
+        filter: brightness(0) invert(1);
+        margin-bottom: 3%;
+    }
+    
+    .footer-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-text div:not(.personal-accounts) {
+        margin-right: 0;
+    }
+
+    .footer-text .personal-details {
+        width: 100%;
+    }
+
+    .footer-text .personal-details div {
+        margin-bottom: 7%;
+    }
+
+    .footer-text .about-us,
+    .footer-text .contact-us {
+    width: 100%;
+    }
+
+    .footer-text .about-us p,
+    .footer-text .contact-us p {
+        margin-bottom: 5%;
+    }
+    .footer-text .personal-accounts {
+        width: 100%;
+        margin: 5% 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-text .personal-accounts div {
+        width: 30px;
+        height: 30px;
+        max-width: 9vw;
+        max-height: 9vw;
+        margin-right: 2%;
+    }
+
+    footer .copyright {
+        font-size: 3vw;
+        display: flex;
+        justify-content: center;
+    }
+}
